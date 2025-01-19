@@ -85,8 +85,8 @@ main{
     margin: 0px auto;
 }
 .our-sponsor{
-   max-width: 1110px; 
-  width: 75%;
+  max-width: 1110px; 
+  width: 100%;
   margin: 60px auto;
   padding: 50px;
  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;;
@@ -94,8 +94,103 @@ main{
 }
 .sponsor-companies{
    display: grid;
+   gap: 24px;
+   align-items: center;
    grid-template-columns: repeat(7, 1fr);
 }
+.sponsor-companies img{
+    width: 100%;
+}
+/* start popular section */
+.popular{
+    max-width: 1440px;
+    width: 85%;
+    margin: 130px auto;
+    text-align: center;
+}
+
+
+.popular-card{
+    padding: 17px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.popular-card img{
+    width: 100%;
+}
+
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 16px;
+}
+
+.popular-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 32px;
+}
+
+.card-name{
+    color: #18191F;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.card-number{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #000000;
+    margin-top: 16px;
+}
+.card-description{
+    color: #787885;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+
+.features{
+    max-width: 1440px;
+    width: 85%;
+    margin: 60px auto;
+
+}
+
+
+.product-container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 90px;
+}
+.features-btn{
+    padding: 10px 24px;
+    border-radius: 42px;
+    color: #ffffff;
+    background-color: #E02C6D;
+    border: none;
+    margin-top: 16px;
+}
+
+.features-img img{
+    width: 100%;
+}
+.features-content{
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -129,16 +224,27 @@ main{
         margin-left: 95px;
     }
     .our-sponsor{
+        width: 80%;
         margin-top: 80px;
         padding: 0px;
         box-shadow: none;
         border: none;
+       
     }
     .sponsor-companies{
         grid-template-columns: repeat(3, 1fr);
-        gap:20px;
-
-      
+        gap:10px; 
+        justify-items: center;
+    }
+    .sponsor-companies img{
+        width: 70%;
+        
+    }
+    .popular-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-container{
+        flex-direction: column-reverse;
     }
 }
 
@@ -170,16 +276,28 @@ main{
         margin-left: 180px;
     }
     .our-sponsor{
-        margin-top: 100px;
+        width: 80%;
+        margin-top: 80px;
         padding: 0px;
         box-shadow: none;
         border: none;
+       
     }
     .sponsor-companies{
-        grid-template-columns: repeat(4, 1fr);
-        gap:24px;
+        grid-template-columns: repeat(3, 1fr);
+        gap:30px; 
+        justify-items: center;
+    }
+    .sponsor-companies img{
+        width: 70%;
+        
+    }
+    .popular-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-      
+    .features-content{
+        padding: 10px;
     }
 }
 
