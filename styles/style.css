@@ -80,6 +80,23 @@ background-size: cover;
     margin-top: 16px;
 }
 
+main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+.our-sponsor{
+   max-width: 1110px; 
+  width: 75%;
+  margin: 60px auto;
+  padding: 50px;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;;
+
+}
+.sponsor-companies{
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+}
+
 
 
 @media screen and (max-width:576px){
@@ -109,7 +126,19 @@ background-size: cover;
         text-align: center;
     }
     .banner-btn{
-        margin-left: 100px;
+        margin-left: 95px;
+    }
+    .our-sponsor{
+        margin-top: 80px;
+        padding: 0px;
+        box-shadow: none;
+        border: none;
+    }
+    .sponsor-companies{
+        grid-template-columns: repeat(3, 1fr);
+        gap:20px;
+
+      
     }
 }
 
@@ -139,6 +168,18 @@ background-size: cover;
     }
     .banner-btn{
         margin-left: 180px;
+    }
+    .our-sponsor{
+        margin-top: 100px;
+        padding: 0px;
+        box-shadow: none;
+        border: none;
+    }
+    .sponsor-companies{
+        grid-template-columns: repeat(4, 1fr);
+        gap:24px;
+
+      
     }
 }
 
